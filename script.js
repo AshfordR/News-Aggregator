@@ -8,9 +8,10 @@ function reload() {
 }
 
 async function fetchNews(query) {
-    //const res = await fetch(`${url}${query}&apiKey=${API_KEY}`);
-    //const data = await res.json();
-    //console.log(JSON.stringify());
+    const res = await fetch(`${url}${query}&apiKey=${API_KEY}`);
+    const data = await res.json();
+    console.log(JSON.stringify());
+    /*
     const data = {
         "status": "ok",
         "totalResults": 40106,
@@ -1316,8 +1317,10 @@ async function fetchNews(query) {
                 "content": "For centuries, Hindu pilgrims and devotees have offered prayers at thousands of temples in Ayodhya, a city in northern India believed to be the ancient birthplace of Lord Ram, one of Hinduisms most r… [+6370 chars]"
             }
         ]
+       
     }
-    bindData(data.articles);
+     */
+     bindData(data.articles);
 }
 
 //
